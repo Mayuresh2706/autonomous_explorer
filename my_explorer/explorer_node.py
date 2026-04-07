@@ -10,7 +10,7 @@ from nav2_msgs.action import NavigateToPose
 from std_msgs.msg import Bool
 
 #To commit to goals for longer
-SWITCH_THRESHOLD  = 3.0
+# SWITCH_THRESHOLD  = 20.0
 #Prevent oscillation aaround same goal
 BLACKLIST_RADIUS = 0.2
 
@@ -183,9 +183,9 @@ class SimpleExplorer(Node):
 
         best_score, best_goal = max(scored_goals, key=lambda x: x[0])
         
-        if self.current_goal is not None and best_score < self.current_score * SWITCH_THRESHOLD:
-            best_goal = self.current_goal
-            best_score = self.current_score
+        # if self.current_goal is not None and best_score < self.current_score * SWITCH_THRESHOLD:
+        #     best_goal = self.current_goal
+        #     best_score = self.current_score
         
         self.current_goal = best_goal
         self.current_score = best_score
