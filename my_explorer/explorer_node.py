@@ -38,7 +38,9 @@ class SimpleExplorer(Node):
 
     def active_callback(self, msg):
         self.is_active = msg.data
-        if not self.is_active: self.nav_client.cancel_all_goals()
+        if not self.is_active and hasattr(self, '_goal_handle') and self._goal_handle:
+            self._goal_handle.cancel_goal_async()
+            self.goal_in_progress = False
 
     def map_callback(self,msg):
         self.map_msg = msg
@@ -100,7 +102,7 @@ class SimpleExplorer(Node):
 
         if self.current_goal is not None:
             moved = math.dist(self.pos, self.last_pos)
-            if moved < 0.01:
+            if moved < 0.1:
                 self.stuck_counter += 1
             else:
                 self.stuck_counter = 0
@@ -221,6 +223,7 @@ class SimpleExplorer(Node):
             self.get_logger().error("Goal rejected by Nav2!")
             self.goal_in_progress = False
             return
+        self._goal_handle = goal_handle
         self.get_result_future = goal_handle.get_result_async()
         self.get_result_future.add_done_callback(self.get_result_callback)
 
