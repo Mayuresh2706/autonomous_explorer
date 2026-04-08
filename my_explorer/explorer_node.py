@@ -9,10 +9,9 @@ from rclpy.action import ActionClient
 from nav2_msgs.action import NavigateToPose
 from std_msgs.msg import Bool
 
-#To commit to goals for longer
-# SWITCH_THRESHOLD  = 20.0
+
 #Prevent oscillation aaround same goal
-BLACKLIST_RADIUS = 0.2
+BLACKLIST_RADIUS = 0.5
 
 class SimpleExplorer(Node):
     def __init__(self):
