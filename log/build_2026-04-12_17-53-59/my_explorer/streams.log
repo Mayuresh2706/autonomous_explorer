@@ -1,0 +1,41 @@
+[0.414s] Invoking command in '/home/mayuresh/turtlebot3_ws/src/my_explorer': PYTHONPATH=/home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_explorer build --build-base /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build install --record /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/install.log --single-version-externally-managed install_data
+[0.560s] running egg_info
+[0.561s] creating build/my_explorer/my_explorer.egg-info
+[0.561s] writing build/my_explorer/my_explorer.egg-info/PKG-INFO
+[0.561s] writing dependency_links to build/my_explorer/my_explorer.egg-info/dependency_links.txt
+[0.561s] writing entry points to build/my_explorer/my_explorer.egg-info/entry_points.txt
+[0.561s] writing requirements to build/my_explorer/my_explorer.egg-info/requires.txt
+[0.561s] writing top-level names to build/my_explorer/my_explorer.egg-info/top_level.txt
+[0.562s] writing manifest file 'build/my_explorer/my_explorer.egg-info/SOURCES.txt'
+[0.562s] reading manifest file 'build/my_explorer/my_explorer.egg-info/SOURCES.txt'
+[0.563s] writing manifest file 'build/my_explorer/my_explorer.egg-info/SOURCES.txt'
+[0.563s] running build
+[0.563s] running build_py
+[0.563s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build
+[0.563s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build/lib
+[0.563s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build/lib/my_explorer
+[0.563s] copying my_explorer/explorer_node.py -> /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build/lib/my_explorer
+[0.563s] copying my_explorer/__init__.py -> /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build/lib/my_explorer
+[0.563s] running install
+[0.563s] running install_lib
+[0.563s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages/my_explorer
+[0.564s] copying /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build/lib/my_explorer/explorer_node.py -> /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages/my_explorer
+[0.564s] copying /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build/lib/my_explorer/__init__.py -> /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages/my_explorer
+[0.564s] byte-compiling /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages/my_explorer/explorer_node.py to explorer_node.cpython-310.pyc
+[0.565s] byte-compiling /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages/my_explorer/__init__.py to __init__.cpython-310.pyc
+[0.565s] running install_data
+[0.565s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/ament_index
+[0.565s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/ament_index/resource_index
+[0.565s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/ament_index/resource_index/packages
+[0.565s] copying resource/my_explorer -> /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/ament_index/resource_index/packages
+[0.566s] copying package.xml -> /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/my_explorer
+[0.566s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/my_explorer/launch
+[0.566s] copying launch/launcher.py -> /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/my_explorer/launch
+[0.566s] creating /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/my_explorer/config
+[0.566s] copying config/nav2_params.yaml -> /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/share/my_explorer/config
+[0.566s] running install_egg_info
+[0.567s] Copying build/my_explorer/my_explorer.egg-info to /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages/my_explorer-0.0.0-py3.10.egg-info
+[0.567s] running install_scripts
+[0.579s] Installing run_explorer script to /home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/my_explorer
+[0.579s] writing list of installed files to '/home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/install.log'
+[0.592s] Invoked command in '/home/mayuresh/turtlebot3_ws/src/my_explorer' returned '0': PYTHONPATH=/home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mayuresh/turtlebot3_ws/src/my_explorer/install/my_explorer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/my_explorer build --build-base /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/build install --record /home/mayuresh/turtlebot3_ws/src/my_explorer/build/my_explorer/install.log --single-version-externally-managed install_data

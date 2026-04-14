@@ -1,0 +1,3 @@
+[console_scripts]
+run_explorer = my_explorer.explorer_node:main
+
