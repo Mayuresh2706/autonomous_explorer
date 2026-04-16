@@ -7,7 +7,11 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    nav2_params = '/home/mayuresh/turtlebot3_ws/src/my_explorer/config/nav2_params.yaml'
+    nav2_params = os.path.join(
+        get_package_share_directory('my_explorer'),
+        'config',
+        'nav2_params.yaml'
+    )
 
     cartographer = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
