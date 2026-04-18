@@ -1,5 +1,3 @@
-> **Note:** Although this branch is named `main`, it is the primary branch for our exploration and frontier detection code.
-
 # Changelog
 
 All notable changes to this project are documented in this file using Conventional Commits and Semantic Versioning.
@@ -56,7 +54,7 @@ Active development on `main` branch with focus on frontier detection, autonomous
 
 ---
 
-**Repository:** TurtleBot3 Autonomous Explorer  
+**Repository:** My Explorer  
 **Branch:** main  
 **Last Updated:** 2026-04-17  
 **Status:** Active Development
